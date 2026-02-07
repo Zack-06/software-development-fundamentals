@@ -177,7 +177,7 @@ class CoursePage(Page):
             onvalue="on",
             offvalue="off",
             width=20,
-        ).grid(row=3, column=2, sticky="w", pady=(5, 0))
+        ).grid(row=3, column=2, sticky="w", pady=(5, 0))      
 
         # Predict Frame
         self.predictFrame = ctk.CTkFrame(
