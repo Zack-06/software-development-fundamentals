@@ -3,7 +3,6 @@ class Programme:
         self.__id = id
         self.__name = name
         self.__grade_info = grade_info
-
         self.__semesters = []
 
     # Getters
@@ -18,6 +17,8 @@ class Programme:
 
     def get_grade_info(self):
         return self.__grade_info
+    
+    
 
     def get_public_data(self):
         return {
@@ -47,25 +48,6 @@ class Programme:
             if sem == semester:
                 self.__semesters.remove(sem)
                 break
-
-    # def calculate_cgpa(self):
-    #     total_points = 0.0
-    #     total_credits = 0
-
-    #     for semester in self.__semesters:
-    #         for course in semester.get_courses():
-    #             credit = course.get_credit_hours()
-
-    #             if course.get_grade() != "" and course.get_grade() != "F":
-    #                 total_points += (
-    #                     course.get_grade_point() * credit
-    #                 )  # Add weighted grade points
-    #                 total_credits += credit
-
-    #     if total_credits == 0:
-    #         return 0.0
-
-    #     return round((total_points / total_credits), 4)
 
     def calculate_cgpa(self):
         total_points = 0.0

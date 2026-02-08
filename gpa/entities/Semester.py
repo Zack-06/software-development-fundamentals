@@ -3,7 +3,6 @@ class Semester:
         self.__id = id
         self.__name = name
         self.__programme = programme
-
         self.__courses = []
 
     # Getters

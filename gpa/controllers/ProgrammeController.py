@@ -47,6 +47,7 @@ class ProgrammeController:
                 "C+": [2.33, 55],
                 "C": [2.0, 50],
                 "F": [0.0, 0],
+                "COCU" : [2.0, 0],
             },
         )
 
